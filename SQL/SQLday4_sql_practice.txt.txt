@@ -1,0 +1,52 @@
+SELECT title, domestic_sales, international_sales 
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+
+
+this shows  that how to combine and use the various data present in various table
+
+
+SELECT title, domestic_sales, international_sales
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id
+WHERE international_sales > domestic_sales;
+
+
+in this case we came to that how to use the condition through the table 
+
+
+SELECT title, rating
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id
+ORDER BY rating DESC;
+
+
+in this case we came to know how to use order by condition in the join clause
+
+task2 questions
+1.  which student scored more than 80 marks
+select*from students
+WHERE markd > 80;
+
+this fillter row based on condition
+
+WHERE it is used for the comparitive purpouse
+ SELECT*FROM movies 
+WHERE title like "toy story%"
+
+ORDER BY it is used to arrage the coloumn
+
+WHERE it is used for the comparitive purpouse
+ SELECT*FROM movies 
+WHERE title like "toy story%"
+ORDER BY name
+
+the limit is used to used select the certain rows
+
+answer for the reflection questions:
+1. yes the sql feels easier than the python
+2.i htik it is easier bcoz it is easy understandable
+
